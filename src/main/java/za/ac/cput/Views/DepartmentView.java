@@ -2,7 +2,6 @@ package za.ac.cput.Views;
 
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
-import za.ac.cput.Entity.Course;
 import za.ac.cput.Entity.Department;
 
 import javax.swing.*;
