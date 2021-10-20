@@ -16,7 +16,7 @@ public class Department implements Serializable {
     @Id
     private String depCode;
     private String depName;
-    private int officeNo;
+    private String officeNo;
 
     public Department(){}
 
@@ -34,7 +34,7 @@ public class Department implements Serializable {
         return depName;
     }
 
-    public int getOfficeNo() {
+    public String getOfficeNo() {
         return officeNo;
     }
 
@@ -48,8 +48,9 @@ public class Department implements Serializable {
     }
 
     public static class Builder{
-        private String depCode, depName;
-        private int officeNo;
+        private String depCode;
+        private String depName;
+        private String officeNo;
 
         public Builder setDepCode(String depCode) {
             this.depCode = depCode;
@@ -61,7 +62,7 @@ public class Department implements Serializable {
             return this;
         }
 
-        public Builder setOfficeNo(int officeNo) {
+        public Builder setOfficeNo(String officeNo) {
             this.officeNo = officeNo;
             return this;
         }

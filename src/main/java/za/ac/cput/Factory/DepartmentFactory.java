@@ -10,7 +10,7 @@ import za.ac.cput.Entity.Department;
 
 public class DepartmentFactory {
 
-    public static Department build(String depCode, String depName, int officeNo){
+    public static Department build(String depCode, String depName, String officeNo){
 
         return new Department.Builder()
                 .setDepCode(depCode)
