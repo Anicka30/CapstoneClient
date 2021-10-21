@@ -80,7 +80,8 @@ public class Navigation extends JFrame implements ActionListener {
         }
         else if (e.getSource() == student)
         {
-            JOptionPane.showMessageDialog(null, "Currently not attatched");
+            //JOptionPane.showMessageDialog(null, "Currently not attatched");
+            new StudentView().setGui();
         }
     }
 

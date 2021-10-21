@@ -10,7 +10,6 @@ import com.google.gson.Gson;
 import okhttp3.*;
 import za.ac.cput.Entity.Student;
 import za.ac.cput.Factory.StudentFactory;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -107,16 +106,18 @@ public class StudentView extends JFrame implements ActionListener {
             stNT.setText("");
             stST.setText(" ");
             stET.setText(" ");
+            //new StudentView().setGUI();
         }else if (et.getSource()== deleteB){
             String item = stNoT.getText();
             change(item);
+            //new StudentView().setGUI();
         }else if(et.getSource() == updateB){
             alter(stNoT.getText(),stNT.getText(),stST.getText(),stET.getText());
             stNoT.setText("");
             stNT.setText("");
             stST.setText(" ");
             stET.setText(" ");
-
+            //new StudentView().setGUI();
         }
     }
 
@@ -179,4 +180,5 @@ public class StudentView extends JFrame implements ActionListener {
     public static void main(String[] args) {
         new StudentView().setGUI();
     }
+
 }
