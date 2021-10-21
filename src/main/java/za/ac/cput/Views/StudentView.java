@@ -178,7 +178,7 @@ public class StudentView extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new StudentView().setGUI();
+        ///new StudentView().setGUI();
     }
 
 }
