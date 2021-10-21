@@ -68,7 +68,7 @@ public StoreLecturer(){
         if (e.getSource() == btnSave) {
             store(txtName.getText(),txtSurname.getText(),txtIdentity.getText());
         } else if (e.getSource() == btnCancel) {
-            System.exit(0);
+            this.dispose();
         }
 
 }

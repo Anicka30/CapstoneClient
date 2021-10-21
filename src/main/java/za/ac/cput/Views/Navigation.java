@@ -23,6 +23,7 @@ public class Navigation extends JFrame implements ActionListener {
     }
 
     public void setGUI(){
+
         panelNorth.setLayout(new GridLayout(1,1));
         panelCenter.setLayout(new GridLayout(6,1,3,4));
         panelSouth.setLayout(new GridLayout(1,1));
@@ -52,6 +53,7 @@ public class Navigation extends JFrame implements ActionListener {
         this.setVisible(true);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+        this.setSize(500,400);
     }
 
     @Override
